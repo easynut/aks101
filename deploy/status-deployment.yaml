@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: status-web
-        image: us.icr.io/$YOURNAME-iks101/$YOURNAME-status-page:1
+        image: us.icr.io/$YOURNAME-asekube101/$YOURNAME-status-page:1
         # If life has truly given you lemons you can uncomment below to just take our public images instead.
         # image: ibmworkshop/status_page:1
         imagePullPolicy: Always
