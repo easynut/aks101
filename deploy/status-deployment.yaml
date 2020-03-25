@@ -16,9 +16,11 @@ spec:
     spec:
       containers:
       - name: status-web
-        image: us.icr.io/$YOURNAME-iks101/$YOURNAME-status-page:1
-        # If life has truly given you lemons you can uncomment below to just take our public images instead.
-        # image: nuttapwong/status-page:1
+        # If you would like to give a try by using the image that store from IBM Cloud Container Registry
+        # just un-comment the following line and update it (replace $YOURNAME) to correct URL to retrive the image.
+        # image: us.icr.io/$YOURNAME-iks101/$YOURNAME-status-page:1
+        # default, use image stored on dockerHub (public) 
+        image: nuttapwong/status-page:1
         imagePullPolicy: Always
         env:
           - name: REDIS_HOST
